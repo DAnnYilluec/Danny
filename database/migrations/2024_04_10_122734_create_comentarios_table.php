@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->text('texto');
-            $table->foreignId('id_discusiones')->constrained('discusiones');
+            $table->foreignId('id_discusion')->constrained('discusiones');
             $table->foreignId('id_usuario')->constrained('usuarios');
             $table->foreignId('id_comentario')->nullable()->constrained('comentarios');
         });
