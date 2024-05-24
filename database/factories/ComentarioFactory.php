@@ -23,7 +23,7 @@ class ComentarioFactory extends Factory
         return [
             'texto'=>fake()->paragraph(),
             'id_usuario'=>$this->faker->randomElement($usuariosIds),
-            'id_discusiones'=>$this->faker->randomElement( $discusionesIds)
+            'id_discusion'=>$this->faker->randomElement( $discusionesIds)
         ];
     }
 }
