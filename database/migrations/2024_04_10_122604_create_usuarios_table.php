@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('contrasena')->default("admin");
             $table->boolean('esAdmin')->default(FALSE);
-            $table->text('texto')->default("Lorem Ipsum");
+            $table->text('texto')->nullable();
             $table->string('correo')->unique();
             $table->string('imagen')->nullable();
         });
